@@ -68,7 +68,7 @@ The Project is built as follows:
 These 3 Python files are in the Modules Folder and represent the Framework. The following diagram represents the general interactions of the different modules in the framework. The Examples Jupyter Notebook plays the role of the Main Script in the diagram.
 
 <p align="center">
-<img src="https://github.com/JoernDiemer/Framework_for_Reinforcement_Learning/blob/main/Media/Framework_Interaction.PNG" width="700">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/Framework_Interaction.PNG" width="700">
 </p> 
 
 ## About Reinforcement Learning
@@ -89,7 +89,7 @@ Generally, the Reinforcement Learning Problem can be described as:
 An Agent "explores" an environment using a Trial-and-Error approach to find actions that give it the highest reward, which it then tries to maximize. A typical cycle for an Agent would be: first observe the current state, **S0**, then decide to take an action, **A0**, based on past experience or in the interest of exploration. After the action has been performed the agent receives feedback from the environment in the form of a reward, **R1**, and next state, **S1**. This gives the agent one experience set (**S0**, **A0**, **R1**, **S1**). This interaction of gathering one experience set is depicted below. The agent does this until it reaches a terminal state. The collection of states from initial state to terminal state is then referred to as an episode.
 
 <p align="center">
-<img src="https://github.com/JoernDiemer/Framework_for_Reinforcement_Learning/blob/main/Media/Agent_Environment_Interaction.PNG" width="600">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/Agent_Environment_Interaction.PNG" width="600">
 </p> 
 
 This interaction can be modelled by a Markov Decision Process(MDP). MDP is defined as a tuple of a state-space and a transition function or transition probability. States need to fulfill the Markov Property to be solved, in other words the current state does not depend on previous state, meaning the future is independent of the past given the present
@@ -135,7 +135,7 @@ NEAT (NeuroEvolution of Augmenting Topologies) is a method for modifying neural 
 NEAT uses direct encoding in form of a Genome to represent network structures. A Genome has two sets of genes, one that represents all the different nodes in the network and one that describes the connections of the nodes. The connection genome specifies between which two nodes it occurs, the weight of the connection, whether or not it is enabled, and a so-called innovation number.
 
 <p align="center">
-<img src="https://github.com/JoernDiemer/Framework_for_Reinforcement_Learning/blob/main/Media/NEAT_Encoding.png" width="600">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/NEAT_Encoding.png" width="600">
 </p>
 
 ### Mutation
@@ -143,7 +143,7 @@ NEAT uses direct encoding in form of a Genome to represent network structures. A
 To evolve the neural network structure different mutations can occur. Either existing connections can be changed or new connections or nodes can be added. In the diagram below the cases pf adding a new connection or node is described. When a new node is added it is placed between two nodes that are already connected. This means the previous connection must be disabled; however, it is still represented in the genome.
 
 <p align="center">
-<img src="https://github.com/JoernDiemer/Framework_for_Reinforcement_Learning/blob/main/Media/NEAT_Mutation.png" width="600">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/NEAT_Mutation.png" width="600">
 </p>
 
 ### Crossover
@@ -151,7 +151,7 @@ To evolve the neural network structure different mutations can occur. Either exi
 The diagram below shows how two different networks are crossed over to form offspring.
 
 <p align="center">
-<img src="https://github.com/JoernDiemer/Framework_for_Reinforcement_Learning/blob/main/Media/NEAT_Evolution.png" width="600">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/NEAT_Evolution.png" width="600">
 </p>
 
 ### Species
