@@ -122,9 +122,17 @@ To extend this to training sets where multiple episodes get evaluated a second l
 
 A method for solving these kinds of problems is called Q-learning. Or more specifically one-step Q-learning. The goal of the agent is to find the optimal action-value function(Q-Function), meaning to find the function that has as input a state and then outputs the action which leads to the most reward. In Q-learning the Q-Function is found by repeatedly interacting with the environment and updating the estimates for the state-action pairs it has seen. This update of the Q-Value is done for each step with this formula Q(S<sub>t</sub>, A<sub>t</sub>) = Q(S<sub>t</sub>, A<sub>t</sub>) +  &alpha;(R<sub>t+1</sub> + &gamma;max<sub>a</sub>Q(S<sub>t+1</sub>, a)-Q(S<sub>t</sub>, A<sub>t</sub>)). Which if done enough leads to the Q-Function. In Tabular Q-Learning the Q-Function is stored as a table which has all available actions as columns and the states as rows. Meaning that given a state and an action a Q-Value can be read from the table. The table entries (or Q-values) are update with the formular as stated above. Given enough transition sets this Q-Table can represent the optimal Q-Function.
 
+<p align="center">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/Tab_Q_learning.PNG" width="700">
+</p> 
+
 ## Deep Q-Learning
 
 When the environment's state space becomes too large to represent the optimal Q-function in the form of a Table a different solution must be considered. In deep Q-learning a neural network is taken to approximate the Q-function. The neural network has as input the state representation and as output the different actions, that the agent can take. The Reward is used in training for back-propagation to update the weights and biases of the neural network to provide a better estimate of the Q-function.
+
+<p align="center">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/Deep_Q_learning.PNG" width="700">
+</p> 
 
 ## NEAT
 
