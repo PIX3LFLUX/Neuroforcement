@@ -138,6 +138,10 @@ When the environment's state space becomes too large to represent the optimal Q-
 
 NEAT (NeuroEvolution of Augmenting Topologies) is a method for modifying neural network weights, topologies, or ensembles in order to learn a specific task. Evolutionary computation is used to search for network parameters that maximize a fitness function that measures performance in a specific task.
 
+<p align="center">
+<img src="https://github.com/PIX3LFLUX/Neuroforcement/blob/main/Media/NEAT.PNG" width="700">
+</p> 
+
 ### Encoding
 
 NEAT uses direct encoding in form of a Genome to represent network structures. A Genome has two sets of genes, one that represents all the different nodes in the network and one that describes the connections of the nodes. The connection genome specifies between which two nodes it occurs, the weight of the connection, whether or not it is enabled, and a so-called innovation number.
