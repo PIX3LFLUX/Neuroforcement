@@ -1,6 +1,6 @@
 # The Implementation of a modular Framework for Reinforcement Learning with neuro-evolutional Neural Networks
 
-This repository details the use of a modular framework for Reinforcement Learning, including basic Tabular Q-Learning, DQN and NEAT for Neuro-Evolutional purposes. This Framework was developed under supervision of Prof. Jan Bauer for the use on the Hochshule Karlsruhe P!X3LFLUX Servers to make it simple to incorporate Reinforcement Learning and Neuro-evolution in other Projects and to give a good baseline into Reinforcement Learning.
+This repository details the use of a modular framework for Reinforcement Learning, including basic Tabular Q-Learning, DQN and NEAT for Neuro-Evolutional purposes. This Framework was developed for the use on the Hochshule Karlsruhe P!X3LFLUX Servers to make it simple to incorporate Reinforcement Learning and Neuro-evolution in other Projects and to give a good baseline into Reinforcement Learning.
 
 ## Directory
 
