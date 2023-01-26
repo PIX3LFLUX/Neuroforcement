@@ -4,11 +4,11 @@ import numpy as np
 import torch
 import time
 
-"""Functions to start the virtual display and to render the rgb image from open ai gym"""
+"""Functions to start the virtual display and to render the rgb image from gym"""
     
 def start_display():
     # Starting the Virtual Display to allow environments to be rendered and return it to the main
-    #Call this function once at the beginning of the script
+    # Call this function once at the beginning of the script
     display = Display(visible=0, size=(1400, 900))
     display.start()
         
@@ -20,7 +20,7 @@ def start_display():
         
 def output_frame(render, display, plot, episode = None, step_counter = None):
     """
-    Plot the Output of the Open Ai Gym Environment
+    Plot the Output of the Gym Environment
     Call this Function for each action-/timestep to output the changing environment
     
     Arguments:
@@ -36,7 +36,9 @@ def output_frame(render, display, plot, episode = None, step_counter = None):
     plt.axis('off')
     display.display(plt.gcf())
     display.clear_output(wait=True)
+    
 
+    
 ###################################################################################################
 class Plotting:
     def __init__(self):
@@ -57,6 +59,7 @@ class Plotting:
         plt.show()
         
     def add_data(self, episode_number, episode_reward):
+        
         self.Episode_number.append(episode_number)
         self.Episode_reward.append(episode_reward)
         self.Average_reward.append(np.sum(self.Episode_reward)/episode_number)
